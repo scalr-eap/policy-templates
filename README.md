@@ -17,7 +17,7 @@ Library of templates to meet common OPA with Terraform requirements.
 
 In general these templates can be configured simply by setting the resources, attribute and ...list variables as in this example
 
-```
+```rego
 ...
 resource := "{resource_name}"
  
