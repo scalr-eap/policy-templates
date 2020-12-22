@@ -4,7 +4,7 @@ package terraform
 
 import input.tfplan as tfplan
 
-resource := "{resource}}"
+resource := "{resource}"
 
 # The planned value for this array attribute
 attribute := "{attribute}"

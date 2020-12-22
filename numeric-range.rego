@@ -26,7 +26,7 @@ deny[reason] {
 
   # OPA considers 'null' to be a type rather than an indicator of no value.
   # It has a pecendent for comparing in which a null type is always < a numeric.
-  # This when min := null the attribute value is always > min. 
+  # Thus when min := null the attribute value is always > min. 
   # This gives the desired result, albeit for the wrong reason.
   r.change.after[attribute] < min
 
