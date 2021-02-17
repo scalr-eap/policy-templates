@@ -19,3 +19,13 @@ deny[reason] {
 	reason := sprintf("%-40s :: Variable must have a description", 
 	                    [key])
 }
+
+deny[reason] {
+	
+	var = tfplan.configuration.root_module.module_calls[_].module.variables[key]
+
+	get_desc(var) == ""
+
+	reason := sprintf("%-40s :: Variable must have a description", 
+	                    [key])
+}
