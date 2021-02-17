@@ -1,4 +1,4 @@
-# AAdminWS Templates
+# Admin Templates
 
 Library of OPA templates to meet common Admin Terraform requirements. 
 
