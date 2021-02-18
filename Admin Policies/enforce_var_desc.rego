@@ -22,10 +22,10 @@ deny[reason] {
 
 deny[reason] {
 	
-	var = tfplan.configuration.root_module.module_calls[_].module.variables[key]
+	var = tfplan.configuration.root_module.module_calls[mod].module.variables[key]
 
 	get_desc(var) == ""
 
-	reason := sprintf("%-40s :: Variable must have a description", 
-	                    [key])
+	reason := sprintf("%-40s :: Variable in call to module '%s' must have a description", 
+	                    [key,mod])
 }

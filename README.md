@@ -12,6 +12,7 @@ These policies have been tested against limited sets of `terraform plan` outputs
 | ------------------------ | -- |
 | Generic | These templates are cloud agnostic and provide a simple way to implement white or black lists on values for attributes. |
 | AWS | Policies specific to Amazon Web Services |
+| Azure | Policies specific to Azure |
 | GCP | Policies specific to Google Cloud Platform |
 | Admin | Policies related to general admin compliance such a restricting provisioners, enforcing tags etc |
 
